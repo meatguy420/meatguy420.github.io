@@ -1,0 +1,33 @@
+body {
+	background-color: green;
+	font family: Arial, sans-serif;
+}
+
+h1 {
+	color: purple;
+	font family: Times New Roman, sans-serif;
+	font-size: 50px;
+}
+
+h2 {
+	color: orange;
+	font family: Times New Roman, sans-serif;
+	font-size: 30px;
+}
+
+h3 {
+	color: blue;
+	font family: Times New Roman, sans-serif;
+	font-size: 30px;
+}
+
+h4 {
+	color: red;
+	font family: Times New Roman, sans-serif;
+	font-size: 30px;
+}
+
+A:link {text-decoration: none}
+A:visited {text-decoration: none}
+A:active {text-decoration: none}
+A:hover {text-decoration: underline overline; color: red;}
