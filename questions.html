@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Needs Analysis Form</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.myDiv {
+  border: 5px outset orange;
+  background-color: lightblue;
+  text-align: center;
+}
+</style>
+</head>
+
+<header>
+<div class="myDiv">
+  <h1>Needs Analysis Form</h1>
+</div>
+</header>
+
+<body>
+
+<form action="results.html"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  <label for="question1">1. How often do you use the internet?</label><br>
+  <input type="radio" id="all" name="fav_language" value="All the time">
+  <label for="all">All the time</label><br>
+  <input type="radio" id="often" name="fav_language" value="Very often">
+  <label for="often">Very often</label><br>
+  <input type="radio" id="week" name="fav_language" value="A few times a week">
+  <label for="week">A few times a week</label><br>
+  <input type="radio" id="day" name="fav_language" value="A few minutes per day">
+  <label for="day">A few minutes per day</label><br>
+  <input type="radio" id="no" name="fav_language" value="Not much">
+  <label for="no">Not much</label><br><br>
+  <label for="question2">2. Do you use the internet for research purposes?</label><br>
+  <input type="radio" id="yes" name="fav_language" value="Yes">
+  <label for="Yes">Yes</label><br>
+  <input type="radio" id="no" name="fav_language" value="No">
+  <label for="no">No</label><br>
+  <input type="radio" id="depends" name="fav_language" value="Depends">
+  <label for="depends">Depends</label><br><br>
+  <label for="question3">3. Select which web features you're most familiar with</label><br>
+  <input type="checkbox" id="feature1" name="feature1" value="HTML5">
+  <label for="feature1"> HTML5</label><br>
+  <input type="checkbox" id="feature2" name="feature2" value="CSS3">
+  <label for="feature2"> CSS3</label><br>
+  <input type="checkbox" id="feature3" name="feature3" value="Hyperlink">
+  <label for="feature3"> Hyperlink</label><br>
+  <input type="checkbox" id="feature4" name="feature4" value="Header">
+  <label for="feature4"> Header</label><br>
+  <input type="checkbox" id="feature5" name="feature5" value="Footer">
+  <label for="feature5"> Footer</label><br>
+  <input type="checkbox" id="feature6" name="feature6" value="UX and UI">
+  <label for="feature6"> UX and UI</label><br><br>
+  <label for="question4">4. Which of the following do you associate most with webpage design?</label><br>
+  <input type="checkbox" id="asset1" name="asset1" value="Communications">
+  <label for="asset1"> Communications</label><br>
+  <input type="checkbox" id="asset2" name="asset2" value="Navigation">
+  <label for="asset2"> Navigation</label><br>
+  <input type="checkbox" id="asset3" name="asset3" value="Accessibility">
+  <label for="asset3"> Accessibility</label><br>
+  <input type="checkbox" id="asset4" name="asset4" value="Multimedia Content">
+  <label for="asset4"> Multimedia Content</label><br>
+  <input type="checkbox" id="asset5" name="asset5" value="Responsiveness">
+  <label for="asset5"> Responsiveness</label><br>
+  <input type="checkbox" id="asset6" name="asset6" value="Safety">
+  <label for="asset6"> Safety</label><br>
+  <input type="checkbox" id="asset7" name="asset7" value="Consistency">
+  <label for="asset7"> Consistency</label><br>
+  <input type="checkbox" id="asset8" name="asset8" value="Mobile Compatibility">
+  <label for="asset8"> Mobile Compatibility</label><br>
+  <input type="checkbox" id="asset9" name="asset9" value="Relevancy">
+  <label for="asset9"> Relevancy</label><br>
+  <input type="checkbox" id="asset10" name="asset10" value="Speed">
+  <label for="asset10"> Speed</label><br>
+  <input type="checkbox" id="asset11" name="asset11" value="Reliability">
+  <label for="asset11"> Reliability</label><br><br>
+  <label for="question5">5. On a scale from 1-10, how important do you think is the user experience for web design?</label><br>
+  1
+  <input type="range" id="a" name="a" value="5">
+  10
+  <output name="x" for="a b"></output>
+  <br><br>
+  <label for="question6">6. On a scale from 1-10, how important do you think is a site's layout quality?</label><br>
+  1
+  <input type="range" id="a" name="a" value="5">
+  10
+  <output name="x" for="a b"></output>
+  <br><br>
+  <label for="question7">7. How do you contact others online for help and/or support?</label><br>
+  <input type="text" id="answer" name="answer" size="50"><br><br>
+  <label for="question8">8. When making hiring decisions, would you consider information published on personal websites as part of someone's portfolio?</label><br>
+  <input type="radio" id="yes" name="fav_language" value="Yes">
+  <label for="Yes">Yes</label><br>
+  <input type="radio" id="sometimes" name="fav_language" value="Sometimes">
+  <label for="sometimes">Sometimes</label><br>
+  <input type="radio" id="no" name="fav_language" value="No">
+  <label for="no">No</label><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form>
+
+</body>
+</html>
+

@@ -17,3 +17,19 @@ window.addEventListener.apply("load",function() { changeBackground('blue')})
 */
 
 console.log("name");
+
+window.onload=function(){
+    var user = document.getElementById("username");
+    console.log(user.value);
+    console.log(user.type);
+}
+
+function inputHandler()
+{
+    var myvalue = document.getElementById("myinput").value;
+    document.getElementById("emptyParagraph").innerHTML = "Your Input:";
+}
+
+localStorage.setItem("username","ITM");
+console.log(localStorage.getItem("username"));
+localStorage.removeItem("username");

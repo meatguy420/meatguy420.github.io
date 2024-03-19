@@ -4,6 +4,7 @@
 <title>Gilbert Phan's Website</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="styles.css">
+
 <style>
 .myDiv {
   border: 5px outset orange;
@@ -12,13 +13,54 @@
 }
 </style>
 </head>
+
 <header>
 <div class="myDiv">
   <h1>Gilbert Phan's Website</h1>
   <p>Welcome to my site!</p>
 </div>
 </header>
+
+<p>Click the button to type your name.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let person = prompt("Please enter your name");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hi " + person + "!";
+  }
+}
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script>
+
 <body>
+
+<p>
+<a href="image.html">
+<img border="0" alt=" " src="https://1drv.ms/i/s!Arkx7orCogNpglk4PMuNSkseC6me?e=I13cC1" width="200" height="200">
+</a>
+</p>
+
+<div id="myDropdown" class="dropdown-content">
+<a href="#">Education</a>
+<a href="#">Educational Degrees</a>
+<a href="#">Extracurricular Activities</a>
+<a href="#">Links</a>
+</div>
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
 <h1>Education</h1>
 <ul>
 <li>Essex Public School (2005-2015)</li>
@@ -26,11 +68,13 @@
 <li>Ryerson University/Toronto Metropolitan University (2020-present)</li>
 </ul>
 <hr>
+
 <h2>Program and Courses</h2>
 <dl>
 <dt>Business Technology Management</dt>
 <dd>It is a program that combines courses teaching in Business, Technology and even Finance. The courses I'm taking/have taken are as follows:</dd>
 </dl>
+
 <ol>
 <li>CMN279 (Introduction to Professional Communication)</li>
 <li>GMS200 (Introduction to Global Management)</li>
@@ -61,6 +105,7 @@
 <li>MHR640 (Leadership)</li>
 </ol>
 <hr>
+
 <h3>Educational Degrees</h3>
 <ul>
 <li>High School Diploma</li>
@@ -68,12 +113,17 @@
 <li>Bachelors</li>
 </ul>
 <hr>
+
 <h4>Extracurricular Activities</h4>
 <ul>
 <li>Dance Class</li>
 <li>Gym Practice</li>
 </ul>
 <hr>
+
+<h5>Needs Analysis Form</h5>
+<a href="questions.html">Link to Form</a>
+
 <div class="Table">
     <div class="Title">
         <p>Links</p>
@@ -103,6 +153,7 @@
         </div>
     </div>
 </div>
+
 <style type="text/css">
     .Table
     {
@@ -134,9 +185,12 @@
         padding-right: 5px;
     }
 </style>
+
 <hr>
+
 <footer>
 <small><i>Copyright &copy; 2022 Gilbert Phan</i></small>
 </footer>
+
 </body>
 </html>
